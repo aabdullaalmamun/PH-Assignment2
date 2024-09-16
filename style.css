@@ -1,0 +1,248 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.nav,.banner{
+    max-width: 1044px;
+    margin: 0 auto;
+}
+.interfont {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* Menu icon (hamburger) */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+
+
+/* header-section */
+.header{
+    background: linear-gradient(180deg, #111 0%, rgba(20, 20, 20, 0.911) 100%);
+}
+
+/* nav section */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue */
+}
+.nav-list >li>a{
+    text-decoration: none;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+
+}
+.nav-list li{
+    list-style: none;
+    margin-left: 45px;
+}
+.nav-title{
+    color: #E6533C;
+    font-family: Inter;
+    font-size: 2.1rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 120%;
+}
+.nav-list a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.home-btn{
+    border-radius: 46px;
+background: #E6533C;
+padding: 8px 20px;
+border: none;
+color: #FFF;
+font-size: 18px;
+font-weight: 600;
+}
+
+/* banner-section */
+.banner{
+    display: flex;
+    /* background-color: violet; */
+}
+.banner-content{
+    width: 520px;
+    margin-right: 167px;
+    /* background-color: aqua; */
+}
+.banner-title{
+    color: #FFF;
+font-family: Inter;
+font-size: 4.5rem;
+font-weight: 900;
+margin-bottom: 28px;
+}
+.banner-description{
+color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.5px;
+margin-bottom: 28px;
+}
+
+.banner-btn1{
+    color: #FFF;
+font-size: 1rem;
+font-weight: 600;
+    width: 224px;
+    padding: 16px 48px;
+    border-radius: 42px;
+    margin-right: 14px;
+    background: #E6533C;
+    border: none;
+}
+.banner-btn2{
+background-color: transparent;
+    color: #FFF;
+font-size: 1rem;
+font-weight: 600;
+    width: 224px;
+    padding: 16px 48px;
+    border-radius: 42px;
+    border: 1px solid #FFF;
+}
+/* .banner-img{
+    border: 5px solid yellow;
+} */
+.banner-img>img{
+    width: 100%;
+    height: 100%;
+}
+.turorial-card{
+    /* position: absolute; */
+    /* margin-top: 400px;
+    margin-left: -470px; */
+ width: 12.8rem;
+height: 6rem;
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.10);
+background: rgba(48, 48, 48, 0.54);
+backdrop-filter: blur(10px);
+display: flex;
+align-items: end;
+margin-top: -150px;
+margin-left:-100px;
+}
+
+.turorial-svg{
+    margin-bottom: 1.8rem;
+}
+ 
+.turorial-head{
+    color:  #FAFAF9;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 900;
+line-height: 24px; /* 100% */
+letter-spacing: 0.3px;
+margin-bottom: 0px;
+text-align: start;
+}
+.turorial-des{
+    color: var(--Text-2, rgba(239, 237, 232, 0.65));
+
+/* body-text */
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.5px;
+margin-bottom: 0px;
+text-align: start;
+}
+
+.turorial-card2{
+    width: 12rem;
+height: 6.1rem;
+flex-shrink: 0;
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.10);
+background: rgba(255, 255, 255, 0.10);
+backdrop-filter: blur(10px);
+position: absolute;
+margin-top: -21.8rem;
+margin-left: 15.6rem;
+}
+
+@media screen and (max-width:576px) {
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    .nav-list{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .nav-list{
+        flex-direction: column;
+    }
+   .banner-content{
+    width: 100%;
+    margin: auto;
+   }
+  .banner-btn{
+    display: flex;
+  }
+
+
+   .turorial-card{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -300px;
+    /* background-color: blue; */
+    width: 155.739px;
+    height: 72.577px;
+    
+   }
+   .turorial-card2{
+    position: absolute;
+    margin-left: -160px;
+    margin-top: 50px;
+    width: 145.911px;
+    height: 74.089px;
+    
+   }
+
+   .turorial-head{
+    margin: 0;
+    text-align: center;
+font-size: 30.241px;
+font-style: normal;
+font-weight: 900;
+
+   }
+   .turorial-des{
+    text-align: center;
+font-size: 9.828px;
+font-style: normal;
+font-weight: 400;
+   }
+
+}
