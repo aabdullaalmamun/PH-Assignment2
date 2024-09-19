@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.nav,.banner,.habits-section,.run{
+.nav,.banner,.habits-section,.run,.bmi,.chart-calcultaor-container{
     max-width: 1044px;
     margin: 0 auto;
 }
@@ -282,7 +282,7 @@ padding: 30px;
 .run-header{
     color: #FFF;
 font-family: Inter;
-font-size: 48px;
+font-size: 3rem;
 font-style: normal;
 font-weight: 900;
 line-height: 120%; /* 57.6px */
@@ -292,7 +292,7 @@ margin-bottom: 14px;
 .run-des{
     color: rgba(255, 255, 255, 0.50);
 font-family: Inter;
-font-size: 14px;
+font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 171.429% */
@@ -301,6 +301,139 @@ margin-top: 0px;
 margin-bottom: 34px;
 }
 
+/* BMI part */
+.bmi{
+    margin-top:88px;
+    width: 671px;
+}
+.bmi-title{
+    color: #FFF;
+font-family: Inter;
+font-size: 3rem;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; /* 57.6px */
+
+}
+.bmi-des{
+    color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.3px;
+margin-top: 0;
+}
+
+/* chart-calculator section */
+
+.chart-calculator{
+    background: #222;
+}
+.chart-calcultaor-container{
+    /* background-color: rgb(62, 39, 143); */
+    display: flex;
+    justify-content: space-between;
+}
+/* chart section */
+table{
+    width: 310px;
+}
+table,th,td{
+    border: 2px solid rgb(56, 47, 47);
+    border-collapse: collapse;
+    text-align: start;
+    padding: 10px;
+}
+.chart-title{
+    color: #FFF;
+font-family: Inter;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; /* 33.6px */
+margin-bottom: 52px;
+}
+
+th{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 19.2px */
+}
+td{
+    color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 0.87rem;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+}
+.chart{
+    padding-top: 52px;
+    padding-bottom: 133px;
+}
+
+
+/* calculator section */
+.calculator{
+    width: 577px;
+    padding-top: 52px;
+    padding-bottom: 133px;
+
+}
+.calculator-title{
+    color: #FFF;
+font-family: Inter;
+font-size: 1.75rem;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; /* 33.6px */
+}
+.calculator-des{
+    color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.3px;
+}
+form{
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    gap: 12px;
+}
+form input{
+    color: rgba(255, 255, 255, 0.60);
+    padding: 12px 20px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.10);
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.60);
+}
+#select-box{
+    color: rgba(255, 255, 255, 0.60);
+    grid-column: span 2;
+    padding:12px 20px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.10);
+}
+
+#sex-box{
+    color: rgba(255, 255, 255, 0.60);
+    padding:12px 20px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.10);
+}
+.cal-btn{
+    margin-top: 34px;
+}
 
 
 /* responsibe */
@@ -395,6 +528,35 @@ font-weight: 400;
 }
 .run>img{
     width: 100%;
+}
+/* bmi */
+.bmi{
+    width: 100%;
+}
+
+
+/* chart-calculator */
+.chart-calcultaor-container{
+    flex-direction: column;
+    width: auto;
+}
+.calculator{
+    width: 100%;
+}
+ form input{
+    padding: 11px 0;
+    width: 100%;
+ }
+ #sex-box{
+width: 100%;
+ }
+ #select-box{
+    width: 100%
+ }
+
+.chart{
+    padding-bottom: 0;
+    margin: 0 auto;
 }
 
 
