@@ -1,7 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.nav,.banner,.habits-section,.run,.bmi,.chart-calcultaor-container{
+.nav,
+.banner,
+.habits-section,
+.run,
+.bmi,
+.chart-calcultaor-container,
+.team-img-bg,
+.footer,
+.rights{
     max-width: 1044px;
     margin: 0 auto;
 }
@@ -435,6 +443,147 @@ background: rgba(255, 255, 255, 0.10);
     margin-top: 34px;
 }
 
+/* team-section */
+.team-title,.team-des{
+    text-align: center;
+}
+
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+}
+
+.team-img > img{
+    width: 100%;
+    height: 100%;
+}
+.team-img-bg{
+    padding: 20px;
+    border-radius: 18px;
+background: rgba(255, 255, 255, 0.10);
+}
+.team-img{
+    height: 272px;
+align-self: stretch;
+border-radius: 18px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+.team-title{
+    margin-bottom: 14px;
+}
+.team-des{
+    margin-bottom: 58px;
+}
+.img-head{
+    position: relative;
+    margin-top: -50px;
+    margin-left: 30px;
+    color: #FFF;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; /* 24px */
+}
+.img-des{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 16.8px */
+}
+
+/* footer */
+footer{
+    margin-top: 88px;
+    background: rgba(255, 255, 255, 0.10);
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+}
+.footer1-head{
+    color: #E6533C;
+font-family: Inter;
+font-size: 70px;
+font-style: italic;
+font-weight: 800;
+line-height: 120%; /* 84px */
+}
+.footer1-des{
+    color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: 0.3px;
+}
+.footer-link{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+   
+}
+.footer-link>li{
+    list-style: none;
+    padding-bottom: 20px;
+    
+}
+.footer2-head{
+    color: #FFF;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 38.4px */
+
+}
+.footer-link>li>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.50);
+
+font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 27.6px */
+}
+
+.footer1{
+    width: 443px;
+}
+.footer2,.footer3{
+    width: 181px;
+    margin-top: 10px;
+}
+
+.rights{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.50);
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 120% */
+letter-spacing: 0.3px;
+}
+.hrow{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.10);
+}
+
+
 
 /* responsibe */
 @media screen and (max-width:576px) {
@@ -458,6 +607,14 @@ background: rgba(255, 255, 255, 0.10);
    }
   .banner-btn{
     display: flex;
+  }
+  .banner-title{
+    color: #FFF;
+font-family: Inter;
+font-size: 36px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; /* 43.2px */
   }
 
 
@@ -502,6 +659,12 @@ font-weight: 400;
    }
 .habits-header{
     width: 100%;
+    color: #FFF;
+font-family: Inter;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 120%; /* 38.4px */
 }
 .habits-des{
     width: 100%;
@@ -532,6 +695,7 @@ font-weight: 400;
 /* bmi */
 .bmi{
     width: 100%;
+    margin-top: 30px;
 }
 
 
@@ -542,6 +706,7 @@ font-weight: 400;
 }
 .calculator{
     width: 100%;
+    padding-bottom: 40px;
 }
  form input{
     padding: 11px 0;
@@ -559,6 +724,23 @@ width: 100%;
     margin: 0 auto;
 }
 
+/* team section */
+.team-img-container{
+    grid-template-columns: 1fr;
+}
+.team-title{
+    margin-top: 0;
+}
+
+/* footer */
+.footer{
+    flex-direction: column;
+    padding-top: 0;
+}
+.footer1{
+    width: 100%;
+
+}
 
 }
 
